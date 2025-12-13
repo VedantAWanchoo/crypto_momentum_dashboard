@@ -40,12 +40,11 @@ st.markdown("Adjust the **Time Period** and **Strategy Parameters** in the sideb
 
 # Dummy paths: You MUST replace these with your actual local file paths.
 
-RETURN_PATH = r'C:\Users\Vedant Wanchoo\Desktop\CGS 2020\Crypto\CoinDCX Application\Trial\weekly_returns.csv'
+RETURN_PATH = 'weekly_returns.csv'
 
-VOLUME_PATH = r'C:\Users\Vedant Wanchoo\Desktop\CGS 2020\Crypto\CoinDCX Application\Trial\weekly_volume.csv'
+VOLUME_PATH = 'weekly_volume.csv'
 
-MCAP_PATH = r'C:\Users\Vedant Wanchoo\Desktop\CGS 2020\Crypto\CoinDCX Application\Trial\weekly_market_cap.csv'
-
+MCAP_PATH = 'weekly_market_cap.csv'
 
 
 
@@ -1104,5 +1103,6 @@ if run_button:
 
 
 # cd "C:\\Users\\Vedant Wanchoo\\Desktop\\CGS 2020\\Crypto\\CoinDCX Application\\Trial" ; streamlit run crypto_momentum_dashboard.py
+
 
 
