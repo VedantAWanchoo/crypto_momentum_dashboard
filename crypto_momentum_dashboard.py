@@ -813,9 +813,9 @@ if run_button:
 
     keys = list(all_dfs.keys())
 
-    CUSTOM_COLORS = [ "#d62728", "#1f77b4", "#7f7f7f", ]
+    CUSTOM_COLORS = [ "#1f77b4", "#7f7f7f", "#d62728" ]
 
-    CUSTOM_COLORS_2 = [ "#d62728", "#1f77b4" ]
+    CUSTOM_COLORS_2 = [ "#1f77b4" , "#d62728" ]
 
     num_total_backtests = len(keys)
 
@@ -1103,6 +1103,7 @@ if run_button:
 
 
 # cd "C:\\Users\\Vedant Wanchoo\\Desktop\\CGS 2020\\Crypto\\CoinDCX Application\\Trial" ; streamlit run crypto_momentum_dashboard.py
+
 
 
 
