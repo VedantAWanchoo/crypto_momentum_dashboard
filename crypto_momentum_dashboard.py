@@ -1041,28 +1041,28 @@ if run_button:
 
     # Output 1: Concentration - Title/Y-axis as per request
     with col_mcap_1:
-        st.markdown("##### 1. Market Cap of Top N Coins as a % of Total Market Cap")
+        st.markdown("##### 1. Top N Coins Dominance")
         st.line_chart(
             df_mcap_conc)
-       # st.markdown("_Percentage of Total Market Cap (%)_")
+        st.markdown("_Market Cap of Top N Coins as a % of Total Market Cap_")
 
     # Output 2: Bottom 10% Coin Count vs Total
     with col_mcap_2:
-        st.markdown("##### 2. Coins (N) that make up bottom 10% of Market Cap vs Total coins")
+        st.markdown("##### 2. Bottom 10% Coin Count")
         df_count = df_mcap_bottom[["bottom_10_count", "total_coins"]].copy()
         df_count.columns = ["Coins making bottom 10% of market cap", "Total coins"]
         st.line_chart(
             df_count)
-        #st.markdown("_Number of Coins_")
+        st.markdown("_Coins (N) that make up bottom 10% of Market Cap vs Total coins_")
 
     # Output 3: Ratio (Bottom 10% Coin Share)
     with col_mcap_3:
-        st.markdown("##### 3. Share of Coins (%) that make up bottom 10% of Market Cap")
+        st.markdown("##### 3. Bottom 10% Coin Share")
         df_ratio = df_mcap_bottom[["ratio"]] * 100
         df_ratio.columns = ["Bottom 10% Coin Share"]
         st.line_chart(
             df_ratio)
-        #st.markdown("_Percentage_")
+        st.markdown("_Share of Coins (%) that make up bottom 10% of Market Cap_")
 
     st.markdown("---")
 
@@ -1078,31 +1078,32 @@ if run_button:
 
     # Output 1: Concentration (Top N Volume Share) - Title/Y-axis as per request
     with col_vol_1:
-        st.markdown("##### 1. Trading Volume of Top N Coins as a % of Total Trading Volume")
+        st.markdown("##### 1. Top N Coins Dominance")
         st.line_chart(
             df_vol_conc)
-        #st.markdown("_Percentage of Total Trading Volume (%)_")
+        st.markdown("_Trading Volume of Top N Coins as a % of Total Trading Volume_")
 
     # Output 2: Bottom 10% Coin Count vs Total
     with col_vol_2:
-        st.markdown("##### 2. Coins (N) that make up bottom 10% of Trading Volume vs Total coins")
+        st.markdown("##### 2. Bottom 10% Coin Count")
         df_count = df_vol_bottom[["bottom_10_count", "total_coins"]].copy()
         df_count.columns = ["Coins making bottom 10% of total trading volume", "Total coins"]
         st.line_chart(df_count)
-        #st.markdown("_Number of Coins_")
+        st.markdown("_Coins (N) that make up bottom 10% of Trading Volume vs Total coins_")
 
     # Output 3: Ratio (Bottom 10% Coin Share)
     with col_vol_3:
-        st.markdown("##### 3. Share of Coins (%) that make up bottom 10% of Trading Volume")
+        st.markdown("##### 3. Bottom 10% Coin Share")
         df_ratio = df_vol_bottom[["ratio"]] * 100
         df_ratio.columns = ["Bottom 10% Coin Share"]
         st.line_chart(df_ratio)
-        #st.markdown("_Percentage_")
+        st.markdown("_Share of Coins (%) that make up bottom 10% of Trading Volume_")
 
     st.markdown("---")
 
 
 # cd "C:\\Users\\Vedant Wanchoo\\Desktop\\CGS 2020\\Crypto\\CoinDCX Application\\Trial" ; streamlit run crypto_momentum_dashboard.py
+
 
 
 
